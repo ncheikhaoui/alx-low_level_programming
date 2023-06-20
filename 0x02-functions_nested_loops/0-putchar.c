@@ -1,6 +1,21 @@
-#include <stdio.h>
-int main(void) 
+#include "stdio.h"
+
+/**
+* main - Print the word "_putchar "
+*
+* Return: Always 0 (Success)
+*/
+
+int main(void)
 {
-write(1,"_putchar\n", 9);
-return (0);
+	int i;
+	char p[] = "_putchar";
+
+	for (i = 0; i < 9; i++)
+		{
+		_putchar(p[i]);
+		}
+		_putchar('\n');
+	return (0);
 }
+
