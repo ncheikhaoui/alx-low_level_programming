@@ -1,22 +1,20 @@
 #include "main.h"
 #include <stdio.h>
-/**
-* print_number  - prints # using _putchar function
-* @n: the integer to print
-* Return: void
-*/
-void print_number(int n)
+void print_number(int n) {
+if (n < 0) 
 {
-	Unsigned int k= n;
-	if (n  < 0)
-	{
-	n*= -1 ;
-               k = n ;
-               _putchar('-');
-               }
-               k /= 10 ;
-               if (k != 0) ;
-               print_number(k) ;
-               _putchar(unsigned int)  n % 10 + '0'  ;
-              }
-
+putchar('-');
+n = -n;
+}
+if (n / 10) 
+{
+print_number(n / 10);
+}
+putchar('0' + n % 10);
+}
+int main(void) 
+{
+print_number(98);
+putchar('\n');
+return 0;
+}
