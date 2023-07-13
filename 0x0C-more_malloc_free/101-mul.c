@@ -221,9 +221,9 @@ int main(int argc, char *argv[])
 	for (index = 0; final_prod[index]; index++)
 	{
 		if (final_prod[index] != 'x')
-			_putchar(final_prod[index]);
+		    putchar(final_prod[index]);
 	}
-	_putchar('\n');
+	putchar('\n');
 
 	free(next_prod);
 	free(final_prod);
