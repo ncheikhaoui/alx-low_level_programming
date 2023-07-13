@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-
 int find_len(char *str);
 char *create_xarray(int size);
 char *iterate_zeroes(char *str);
@@ -221,7 +220,7 @@ int main(int argc, char *argv[])
 	for (index = 0; final_prod[index]; index++)
 	{
 		if (final_prod[index] != 'x')
-		      putchar(final_prod[index]);
+			putchar(final_prod[index]);
 	}
 	putchar('\n');
 
